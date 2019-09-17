@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Ryan Gross CIDM 4360
+
+using System;
 
 namespace Assignment_2
 {
