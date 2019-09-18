@@ -47,8 +47,15 @@ class tDate
         }
     }
 
-    public void showDate ()
+    public void showDate (char U, char E)
     {
-
+        switch ()
+        {
+            case 'U':
+                Console.WriteLine("", );
+                break;
+            case 'E':
+                break;
+        }
     }
 }
