@@ -15,11 +15,11 @@ class tDate
 
     public tDate(int month, int day, int year)
     {
-        if ((0 < month && month <= 12) && (0 < day && day <= 31) && (year>0))
+        if ((month > 0 && month <= 12) && (day > 0 && day <= 31) && (year > 0))
         {
-            int mm = month;
-            int dd = day;
-            int yyyy = year;
+            mm = month;
+            dd = day;
+            yyyy = year;
         }
         else
         {
@@ -30,15 +30,15 @@ class tDate
     public tDate(string Date)
     {
         String[] DateObject = Date.Split("/");
-        int month = int.Parse(DateObject[0]);
-        int day = int.Parse(DateObject[1]);
-        int year = int.Parse(DateObject[2]);
+        month = int.Parse(DateObject[0]);
+        day = int.Parse(DateObject[1]);
+        year = int.Parse(DateObject[2]);
 
-        if ((0 < month && month <= 12) && (0 < day && day <= 31) && (year>0))
+        if ((month > 0 && month <= 12) && (day > 0 && day <= 31) && (year>0))
         {
-            int mm = month;
-            int dd = day;
-            int yyyy = year;
+            mm = month;
+            dd = day;
+            yyyy = year;
         }
         else
         {
@@ -46,10 +46,10 @@ class tDate
         }
     }
 
-    public void showDate (char ch)
+    public void showDate (char f)
     {
         
-        switch (ch)
+        switch (f)
         {
             case 'U':
                 Console.WriteLine("{0}/{1}/{3}", mm, dd, yyyy);

@@ -18,8 +18,8 @@ namespace Assignment_2
             d3.showDate('U');
             d3.showDate('E');
             tDate d4 = new tDate("11/11/1811");
-            d3.showDate('U');
-            d3.showDate('E');
+            d4.showDate('U');
+            d4.showDate('E');
         }
     }
 }
