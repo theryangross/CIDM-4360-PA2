@@ -9,12 +9,13 @@ class tDate
     public int day;
     public int month;
     public int year;
+    char ch;
 
-    public tDate(int mm, int dd, int yyyy)
+    public tDate(int month, int day, int year)
     {
-        if ((0 < mm && mm <= 12) && (0 < dd && dd <= 31) && (yyyy>0))
+        if ((0 < month && month <= 12) && (0 < day && day <= 31) && (year>0))
         {
-            Console.WriteLine("{0}/{1}/{2}", mm, dd, yyyy);
+            Console.WriteLine("{0}/{1}/{2}", month, day, year);
         }
         else
         {
@@ -29,13 +30,13 @@ class tDate
     public tDate(string Date)
     {
         String[] DateObject = Date.Split("/");
-        int Month = int.Parse(DateObject[0]);
-        int Day = int.Parse(DateObject[1]);
-        int Year = int.Parse(DateObject[2]);
+        int month = int.Parse(DateObject[0]);
+        int day = int.Parse(DateObject[1]);
+        int year = int.Parse(DateObject[2]);
 
-        if ((0 < Month && Month <= 12) && (0 < Day && Day <= 31) && (Year>0))
+        if ((0 < month && month <= 12) && (0 < day && day <= 31) && (year>0))
         {
-            Console.WriteLine("{0}/{1}/{2}", Month, Day, Year);
+            Console.WriteLine("{0}/{1}/{2}", month, day, year);
         }
         else
         {
@@ -49,12 +50,15 @@ class tDate
 
     public void showDate (char U, char E)
     {
-        switch ()
+        ch = Convert.ToChar(Console.ReadLine());
+        
+        switch (ch)
         {
             case 'U':
-                Console.WriteLine("", );
+                Console.WriteLine("{0}/{1}/{3}", month, day, year);
                 break;
             case 'E':
+                Console.WriteLine("{0}/{1}/{3}", day, month, year);
                 break;
         }
     }
