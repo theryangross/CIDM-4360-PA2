@@ -8,6 +8,9 @@ namespace Assignment_2
     {
         static void Main(string[] args)
         {
+            tDate.earliestDate = "1/1/1900";
+            tDate.latestDate = "12/31/2100";
+
             tDate d1 = new tDate(12, 15, 1990);
             d1.showDate('U');
             d1.showDate('E');

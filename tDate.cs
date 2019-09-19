@@ -4,14 +4,14 @@ using System;
 
 class tDate
 {
-    static string earliestDate = "1/1/1900";
-    static string latestDate = "12/31/2100";
-    public int day;
-    public int month;
-    public int year;
-    public int mm;
-    public int dd;
-    public int yyyy;
+    public static string earliestDate;
+    public static string latestDate;
+    int day;
+    int month;
+    int year;
+    int mm;
+    int dd;
+    int yyyy;
 
     public tDate(int month, int day, int year)
     {
@@ -63,9 +63,9 @@ class tDate
     public void splitDate ()
     {
           String[] eDate = earliestDate.Split("/");
-            int earlyMonth = int.Parse(eDate[0]);
-            int earlyDay = int.Parse(eDate[1]);
-            int earlyYear = int.Parse(eDate[2]);
-            Console.WriteLine("{0}/{1}/{2}", earlyMonth, earlyDay, earlyYear);
+            int mm = int.Parse(eDate[0]);
+            int dd = int.Parse(eDate[1]);
+            int yyyy = int.Parse(eDate[2]);
+            Console.WriteLine("{0}/{1}/{2}", mm, dd, yyyy);
     }
 }
