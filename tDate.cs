@@ -48,7 +48,7 @@ class tDate
         }
     }
 
-    public void showDate (char U, char E)
+    public void showDate (char ch)
     {
         ch = Convert.ToChar(Console.ReadLine());
         
