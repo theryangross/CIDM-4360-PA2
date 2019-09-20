@@ -46,26 +46,25 @@ class tDate
         }
     }
 
-    public void showDate (char f)
+    public void showDate(char ch)
     {
         
-        switch (f)
+        switch (ch)
         {
             case 'U':
-                Console.WriteLine("{0}/{1}/{3}", mm, dd, yyyy);
+                Console.WriteLine("{0}/{1}/{2}", mm, dd, yyyy);
                 break;
             case 'E':
-                Console.WriteLine("{0}/{1}/{3}", dd, mm, yyyy);
+                Console.WriteLine("{0}/{1}/{2}", dd, mm, yyyy);
                 break;
         }
     }
 
-    public void splitDate ()
+    public void splitDate()
     {
-          String[] eDate = earliestDate.Split("/");
+          String[] eDate = earliestDate.Split('/');
             int mm = int.Parse(eDate[0]);
             int dd = int.Parse(eDate[1]);
             int yyyy = int.Parse(eDate[2]);
-            Console.WriteLine("{0}/{1}/{2}", mm, dd, yyyy);
     }
 }
