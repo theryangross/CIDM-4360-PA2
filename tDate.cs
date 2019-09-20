@@ -62,9 +62,9 @@ class tDate
 
     public void splitDate()
     {
-          String[] eDate = earliestDate.Split('/');
-            int mm = int.Parse(eDate[0]);
-            int dd = int.Parse(eDate[1]);
-            int yyyy = int.Parse(eDate[2]);
+        String[] eDate = earliestDate.Split('/');
+        mm = int.Parse(eDate[0]);
+        dd = int.Parse(eDate[1]);
+        yyyy = int.Parse(eDate[2]);
     }
 }
